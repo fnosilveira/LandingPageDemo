@@ -8,3 +8,126 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+}
+
+
+/* Colors */
+
+:root {
+    --white: #F8F9FA;
+    --primary-blue: #5465FF;
+    --secondary-blue: #4755D6;
+    --primary-black: #343A40;
+    --primary-gray: #AAAAAA;
+    --secondary-gray: #777777;
+    --border: #EBECED;
+    --bg-form: #E4E7EC;
+    --border-form: #DEE2E8;
+    --bg-input: #F3F4F5;
+    --border-input: #EEEFF0;
+}
+
+
+/* header */
+
+.header {
+    gap: 300px;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: var(--primary-black);
+}
+
+.navbar {
+    gap: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-title {
+    display: none;
+}
+
+.navbar-link {
+    font-size: 16px;
+    color: var(--primary-black);
+    letter-spacing: 0.5px;
+    transition: .2s linear;
+}
+
+.navbar-link:hover {
+    color: var(--primary-blue);
+    transition: .2s linear;
+}
+
+.navbar-link:nth-child(4) {
+    padding: 0 20px;
+    color: var(--white);
+    line-height: 40px;
+    border-radius: 6px;
+    background-color: var(--primary-blue);
+}
+
+.navbar-link:last-child:hover {
+    background-color: var(--secondary-blue);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+/* footer */
+
+.footer {
+    gap: 400px;
+    display: flex;
+    line-height: 20px;
+    padding-top: 10px;
+    justify-content: space-around;
+    border-top: 1px solid var(--border);
+}
+
+.copyright,
+.terms {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.copyright {
+    color: var(--primary-black);
+}
+
+.terms a {
+    color: var(--primary-blue);
+    transition: .2s ease-in-out;
+}
+
+.terms a:hover {
+    color: var(--secondary-blue);
+    transition: .2s ease-in-out;
+}
